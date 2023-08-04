@@ -90,6 +90,21 @@
   <div class="d-flex justify-content-center">
 <h2 class="name">Casas disponibles</h2>
 </div>
+<!--aquí metere un offcanva para hacer el tema de los filtros-->
+<div class="container"><!--div del container del offdata-->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filtros</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Filtros</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    Aquí se puede poner los filtros de busquedas.
+  </div>
+</div>
+</div> <!--div del container del offcanva-->
+<!--fin del offcanva-->
 <!--todas las tarjetas iran aqui-->
 <div class="container">
   <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -149,14 +164,34 @@
     </div><!--fin de la tarjeta 6-->
   </div>
 </div>
-
-
-
-
 <!--fin de todas las tarjetas-->
 
 
+<!--ahora lo que agrego es un paginatión-->
+<div class="container">
+<nav class="pagination1" aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<!--fin del paginatión-->
 
+
+<!--ahora agrego lo que es el footer-->
+<footer>
+<h5>Este es mi footer</h5>
+<p>Hola mundo como estan</p>
+</footer>
+<!--aquí termina el footer-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
